@@ -1,13 +1,11 @@
-import heroBg from "../Assets/bg/hero-bg.png"
 export const Hero = () => {
   return (
     <section className="hero">
-      <div className="title">
-        <h2>BELLUS HOTEL</h2>
-        <h1>LUXURY HOTEL ROOMS</h1>
+      <div className="overlay">
+        <h1 className="title">LUXURY HOTEL <br />ROOMS</h1>
+        <p className="about">thas been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        <button className="btn">BOOK NOW</button>
       </div>
-
-      <img className="hero-img" src={heroBg} alt="hero" />
-    </section>
+         </section>
   )
 }

@@ -1,0 +1,10 @@
+footer{
+  background-color: var(--color-black);
+  color:white;
+  height:64px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+}
+

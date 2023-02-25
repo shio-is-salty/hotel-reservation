@@ -1,128 +1,235 @@
-.my-64{
-  margin:64px 0;
-}
-
-.mx-64{
-  margin:0 64px;
-}
-
-.text-center {
+.hero{
+  width:100%;
+  max-height: 512px;
+  background-image: url('../Assets/bg/hero-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color:white;
   text-align:center;
 }
 
-.hero{
-  display:flex;
-  justify-content:space-between;
+.hero .overlay{
+  padding:64px 0;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .hero .title{
-  width:512px;
-  text-align:center;
+  font-size: 96px;
 }
 
-.hero .title h2{
-  margin-top:16px;
+.hero .about{
+  max-width:500px;
+  margin: 0 auto;
+  padding:8px;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-weight:500;
 }
 
-.hero .title h1{
-  font-size:96px;
+.hero .btn{
+  margin-top: 32px;
 }
 
-.hero .hero-img{
-  max-width:1024px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
 
+.best-selling-rooms {
+  margin:96px;
 }
 
-.highlighted-rooms{
-  display:grid;
-  grid-template-columns: 512px 512px;
-  justify-content:center;
-  padding: 0 64px;
+.best-selling-rooms .highlighted-rooms{
+  display:flex;
+  flex-direction:column;
   gap:16px;
+}
+
+.best-selling-rooms .title{
+  text-align:center;
+  margin-bottom:96px;
 }
 
 .room-card{
-  width:512px;
-  box-shadow: 0px 50px 100px -20px rgba(50, 50, 93, 0.25), 0px 30px 60px -30px rgba(0, 0, 0, 0.3);
-  padding-bottom:16px;
+  width:100%;
+  height:384px;
+  background-image: url('https://securecdn.pymnts.com/wp-content/uploads/2016/05/Hotel-Room-Secondary-Market-1000x600.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-
-.room-card img{
-  width: 100%;
+.room-card .overlay{
+  padding:32px;
+}
+.room-card .header{
+  display:flex;
+  justify-content: space-between;
+  height:40px;
 }
 
-.room-card .info{
-  padding:16px;
-}
-.room-card .name{
-  margin:8px 0;
-}
-.room-card .info p {
-  height:128px;
-  white-space: break-spaces;
-  overflow: hidden;
-  text-overflow: ellipsis;
+.room-card .header .title{
+  color:var(--color-gold);
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.room-card .info button{
-  margin-top:16px;
-  float: right;
+.room-card .header .bg-controls{
+  display:flex;
+  align-items:center;
+  padding: 8px;
+  border-radius:100px;
+  gap:8px;
+  background-color: var(--color-black);
 }
 
-.highlighted-reviews{
-  display: grid;
-  grid-template-columns: repeat(3, 384px);
+.room-card .header .bg-controls img{
+  width:25px;
+  height:25px;
+  cursor:pointer;
+}
+
+.room-card .header .bg-controls span{
+  color:white;
+  font-weight:600;
+}
+
+.room-card .about{
+  margin:32px 0;
+  max-width: 500px;
+  color:white;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.room-card .price{
+  display:flex;
+  align-items: center;
+  gap:8px;
+  color: white;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.room-card .price h1{
+  font-size:36px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.room-card .btn{
+  margin-top: 64px;
+}
+
+.customer-reviews {
+  margin:96px;
+}
+
+.customer-reviews .title{
+  margin-bottom:96px;
+  text-align:center;
+}
+
+.customer-reviews .reviews{
+  display:grid;
+  grid-template-columns: repeat(3, 350px);
   justify-content:center;
-  gap:16px;
+
+  gap:8px;
+
 }
 .review-card{
   width: 100%;
-  background-color: var(--color-black-5);
-  box-shadow: 0px 50px 100px -20px rgba(50, 50, 93, 0.25), 0px 30px 60px -30px rgba(0, 0, 0, 0.3);
+  background-color: white;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .review-card img{
   width:100%;
+  height:150px;
+  background-repeat: no-repeat;
+  background-size:cover;
 }
 
 .review-card .body{
   padding:8px 16px;
 }
 
-
-.review-card .body .user-rating {
-  display: flex;
+.review-card .body .user-rating{
+  display:flex;
   align-items:center;
-  width:100%;
-}
-
-.review-card .body .user-rating .rating-container{
-  margin-left:8px;
-  width:100%;
+  gap:8px;
 }
 
 .review-card .body .user-rating .icon{
-  width:60px;
-  height:60px;
+  width:50px;
+  height:50px;
+
 }
 
+.review-card .body .user-rating .rating-container{
+  width:100%;
+}
+.review-card .body .user-rating .rating-container h3, h5{
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+.review-card .body .user-rating .rating-container .user-name{
+  font-weight:600;
+}
+.review-card .body .user-rating .rating-container .room-name{
+  font-weight:500;
+}
 .review-card .body .user-rating .rating-container .room-rating{
   display:flex;
+  justify-content:space-between;
+  width:100%;
   align-items:center;
-  gap:16px;
-  justify-content: space-between;
 }
-
 
 .review-card .body .user-rating .rating-container .room-rating img{
   width:90px;
+  height:15px;
 }
 
 .review-card .body p{
-  padding:8px;
+  font-size:14px;
+  padding: 8px;
 }
 
+.customer-questions{
+  margin:96px;
+}
+
+
+.customer-questions .title{
+  text-align: center;
+  margin-bottom: 96px;
+}
+
+.customer-questions div{
+  display:flex;
+  justify-content:space-between;
+
+  gap:16px;
+}
+
+
+.customer-questions .question-form{
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+}
+
+.customer-questions .question-form .btn{
+  margin-top:16px;
+  align-self: flex-end;
+}
+
+.customer-questions .lets-talk{
+  display:block;
+}
+
+.customer-questions .lets-talk h2{
+  text-align:center;
+}
+
+.customer-questions .lets-talk p{
+  padding: 8px;
+}

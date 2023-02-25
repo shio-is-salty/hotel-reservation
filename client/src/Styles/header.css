@@ -16,16 +16,8 @@ header .contact{
 }
 
 header .contact img{
-  width:30px;
-  height:30px;
+  width:25px;
+  height:25px;
 }
 
-header button{
-  padding: 8px 16px;
-  color:var(--color-gold);
-  font-size:20px;
-  background-color:var(--color-grey-25);
-  outline:none;
-  border:none;
-}
 

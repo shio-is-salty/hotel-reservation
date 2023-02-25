@@ -1,14 +1,33 @@
+import leftIcon from "../Assets/icons/left.png"
+import rightIcon from "../Assets/icons/right.png"
+import cameraIcon from "../Assets/icons/camera.png"
 export const RoomCard = () => {
   return (
     <div className="room-card">
-      <img src="https://www.redrockresort.com/wp-content/uploads/2020/12/RR-Standard-2-Queen.jpg" alt="room" />
-      <div className="info">
-        <h2 className="name">AESTHETIC MODERN</h2>
-        <p>Our light and airy Executive Suites epitomize The Peninsula Manila’s attention to detail through their luxurious appointments. With a choice of one- or two-bedroom configurations, these Suites offer guests the ultimate in elegant urban living. Moreover, the Suites can be connected to Grand Deluxe Rooms to facilitate larger groups or families. A spacious living area with plush sofas and daybeds in tones of blue, gray and green complement the separate master bedroom with its large walk-in closet and an ample marble bathroom. Coupled with access to the newly created Gallery Club Lounge with its custom-designed furnishings, original commissioned artworks by pioneering contemporary Filipino artists, and 24-hour In-Room Dining service, guests staying in our Executive Suites will find their every need catered to.</p>
+      <div className="overlay">
+        <div className="header">
+          <h2 className="title">AESTHETIC MODERN</h2>
+          <div className="bg-controls">
+            <img src={leftIcon} alt="left" />
+            <img src={cameraIcon} alt="camera" />
+            <span>1 OF 4</span>
+            <img src={rightIcon} alt="right" />
+          </div>
+        </div>
+
+        <p className="about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ipsum justo, accumsan lacinia lacinia sed, egestas ut eros. Phasellus sagittis enim </p>
+
+        <div className="price">
+          <h1>₱4,000</h1>
+          <div className="tax">
+            <h6>GBP/STAY</h6>
+            <h6>Including taxes & fees</h6>
+          </div>
+        </div>
 
         <button className="btn">RESERVE NOW</button>
-      </div>
 
+      </div>
     </div>
   )
 }

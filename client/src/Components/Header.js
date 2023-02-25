@@ -6,12 +6,12 @@ export const Header = () => {
     <header>
       <div className="contact">
         <img src={ringerIcon} alt="ringer" />
-        <h3>(63) 9761234567</h3>
+        <span className="number">(63) 9761234567</span>
       </div>
 
       <h1>BELLUS HOTEL</h1>
 
-      <button>BOOK NOW</button>
+      <button className="btn">BOOK NOW</button>
     </header>
   )
 }

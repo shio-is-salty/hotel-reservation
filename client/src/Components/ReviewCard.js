@@ -11,9 +11,9 @@ export const ReviewCard = () => {
          <img className="icon" src={userIcon} alt="user" />
 
          <div className="rating-container">
-           <h2 className="user-name">KYLE PAGAYON</h2>
+           <h3 className="user-name">KYLE PAGAYON</h3>
            <div className="room-rating">
-             <h4 className="room-name">SIMPLY CALMING</h4>
+             <h5 className="room-name">SIMPLY CALMING</h5>
              <img src={ratingsIcon} alt="ratings" />
            </div>
           </div>

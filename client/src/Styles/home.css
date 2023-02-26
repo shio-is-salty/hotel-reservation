@@ -356,3 +356,188 @@
     margin-top:8px;
   }
 }
+
+@media only screen and (min-width: 600px){
+
+  .hero .overlay{
+    padding:32px 0;
+  }
+
+  .hero .title{
+    font-size: 40px;
+  }
+
+  .hero .about{
+    font-size: 14px;
+    max-width:320px;
+  }
+
+  .hero .btn{
+    font-size: 16px;
+    margin-top: 16px;
+  }
+
+  .best-selling-rooms {
+   margin: 32px 16px;
+  }
+
+  .best-selling-rooms .highlighted-rooms{
+    gap:8px;
+    max-width:500px;
+    margin: 0 auto;
+  }
+
+  .best-selling-rooms .title{
+    font-size:24px;
+    margin-bottom:32px;
+  }
+
+
+  .room-card .overlay{
+    padding:16px;
+  }
+
+  .room-card .header {
+    height:16px;
+  }
+
+  .room-card .header .title{
+    font-size:24px;
+  }
+
+  .room-card .about{
+    margin:16px 0;
+    max-width:300px;
+    font-size:12px;
+  }
+
+  .room-card .price h1{
+    font-size:16px;
+  }
+
+  .room-card .price .tax{
+    font-size:12px;
+  }
+
+  .room-card .btn{
+    margin-top:16px;
+    font-size: 12px;
+    padding:8px 16px;
+  }
+
+  .customer-reviews{
+    margin: 32px 16px;
+  }
+
+  .customer-reviews .title{
+    margin-bottom:32px;
+    font-size:24px;
+  }
+
+  .customer-reviews .reviews{
+    display:block;
+    max-width:500px;
+    margin:0 auto;
+  }
+
+  .review-card{
+    margin-top:8px;
+  }
+
+  .customer-questions{
+    margin:32px 16px;
+  }
+
+  .customer-questions .title{
+    margin-bottom:32px;
+    font-size:24px;
+  }
+
+  .customer-questions .lets-talk{
+    display:none;
+  }
+
+  .customer-questions .question-form{
+    width:500px;
+    margin: 0 auto;
+  }
+
+  .customer-questions .question-form *{
+    font-size:14px;
+  }
+
+  .customer-questions .question-form .btn{
+    margin-top:8px;
+  }
+}
+
+@media only screen and (min-width: 768px){
+
+  .hero .title{
+    font-size:50px;
+  }
+
+  .hero .about{
+    font-size:16px;
+    max-width:360px;
+  }
+  
+  .best-selling-rooms .highlighted-rooms{
+    max-width:600px;
+  }
+
+  .customer-reviews .reviews{
+    max-width:600px;
+  }
+
+  .customer-questions .question-form{
+    width:600px;
+  }
+}
+
+@media only screen and (min-width: 992px){
+  .home .title{
+    font-size: 60px;
+  }
+
+  .home .about{
+    font-size: 20px;
+    max-width:420px;
+  }
+
+  .room-card .about{
+    font-size:14px;
+  }
+  .best-selling-rooms {
+    margin:64px 16px;
+  }
+  .best-selling-rooms .title{
+    font-size:30px;
+    margin-bottom:64px;
+  }
+  .best-selling-rooms .highlighted-rooms{
+    max-width:100%;
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap:8px;
+  }
+
+  .customer-reviews {
+    margin:64px 16px;
+  }
+
+  .customer-reviews .title{
+    font-size: 30px;
+  }
+
+  .customer-reviews .reviews{
+    max-width:100%;
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap:8px;
+  }
+
+  .customer-questions .title{
+    font-size:30px;
+  }
+}

@@ -16,15 +16,13 @@
 *{
   padding:0;
   margin:0;
+  font-family: 'Montserrat', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6{
   font-family: 'Gelasio', serif;
 }
 
-p, span, label, input, button{
-  font-family: 'Montserrat', sans-serif;
-}
 
 input, textarea{
   padding:16px;
@@ -86,8 +84,4 @@ body{
     height:64px;
     margin-top:128px;
   }
-
-  
-
-
 }

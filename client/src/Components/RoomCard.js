@@ -7,12 +7,12 @@ export const RoomCard = () => {
       <div className="overlay">
         <div className="header">
           <h2 className="title">AESTHETIC MODERN</h2>
-          <div className="bg-controls">
-            <img src={leftIcon} alt="left" />
-            <img src={cameraIcon} alt="camera" />
-            <span>1 OF 4</span>
-            <img src={rightIcon} alt="right" />
-          </div>
+          {/* <div className="bg-controls"> */}
+          {/*   <img src={leftIcon} alt="left" /> */}
+          {/*   <img src={cameraIcon} alt="camera" /> */}
+          {/*   <span>1 OF 4</span> */}
+          {/*   <img src={rightIcon} alt="right" /> */}
+          {/* </div> */}
         </div>
 
         <p className="about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ipsum justo, accumsan lacinia lacinia sed, egestas ut eros. Phasellus sagittis enim </p>

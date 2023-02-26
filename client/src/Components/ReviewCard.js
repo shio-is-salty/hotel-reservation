@@ -3,7 +3,6 @@ import ratingsIcon from "../Assets/icons/ratings.png"
 export const ReviewCard = () => {
   return (
     <div className="review-card">
-      <img src="https://www.redrockresort.com/wp-content/uploads/2020/12/RR-Standard-2-Queen.jpg" alt="room" />
       
       <div className="body">
 

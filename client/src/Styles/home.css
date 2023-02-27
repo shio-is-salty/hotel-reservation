@@ -1,6 +1,5 @@
 .hero{
   width:100%;
-  max-height: 512px;
   background-image: url('../Assets/bg/hero-bg.png');
   background-repeat: no-repeat;
   background-size: cover;
@@ -493,6 +492,24 @@
   .customer-questions .question-form{
     width:600px;
   }
+
+  .room-card .header .title{
+    font-size: 30px;
+  }
+
+  .room-card .about{
+    font-size:18px;
+    max-width: 350px;
+    margin-top:24px;
+  }
+
+  .room-card .price h1{
+    font-size: 20px;
+  }
+
+  .room-card .price .tax{
+    font-size:14px;
+  }
 }
 
 @media only screen and (min-width: 992px){
@@ -516,10 +533,7 @@
     margin-bottom:64px;
   }
   .best-selling-rooms .highlighted-rooms{
-    max-width:100%;
-    display:grid;
-    grid-template-columns:repeat(2, 1fr);
-    gap:8px;
+    max-width:700px;
   }
 
   .customer-reviews {
@@ -531,13 +545,56 @@
   }
 
   .customer-reviews .reviews{
-    max-width:100%;
-    display:grid;
-    grid-template-columns:repeat(2, 1fr);
-    gap:8px;
+    max-width:700px;
   }
 
   .customer-questions .title{
     font-size:30px;
   }
+}
+
+
+@media only screen and (min-width: 1200px){
+  .hero .title{
+    font-size:80px;
+  }
+  .hero .overlay{
+    padding: 64px 0;
+    margin:0;
+  }
+
+  .hero .about{
+    font-size:24px;
+    max-width:500px;
+  }
+  .best-selling-rooms .highlighted-rooms{
+    max-width:800px;
+  }
+  .room-card .overlay{
+    padding:32px;
+  }
+  .room-card .header .title {
+    font-size: 34px;
+  }
+
+  .room-card .about{
+    font-size: 16px;
+  }
+
+  .room-card .price h1{
+    font-size: 20px;
+  }
+
+  .room-card .price .tax{
+    font-size:16px;
+  }
+
+  .customer-reviews .reviews{
+    max-width:800px;
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap:8px;
+  }
+
+
 }

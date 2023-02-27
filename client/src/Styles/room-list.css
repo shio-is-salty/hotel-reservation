@@ -1,0 +1,51 @@
+.room-list{
+  width:100%;
+}
+.room-filter{
+  display:flex;
+  flex-direction:column;
+  padding:32px 16px;
+  gap:8px;
+}
+
+.room-filter select{
+  font-family:'Montserrat', sans-serif;
+  padding:8px;
+  color:var(--color-black-75);
+  border:0;
+  background-color:white;
+  font-size:12px;
+}
+
+.room-filter select option{
+  color:var(--color-black-75);
+  padding:8px;
+} 
+
+.room-filter .btn{
+  box-shadow: none;
+  font-size:12px;
+  padding:8px;
+  margin-left:auto;
+
+}
+
+.room-list .result{
+  padding:0 16px;
+}
+.room-list .result h4 {
+  font-family:"Montserrat", sans-serif;
+  color:var(--color-black);
+}
+
+.room-list .result h6 {
+  font-family:"Montserrat", sans-serif;
+  color:var(--color-black-75);
+}
+
+.room-list .rooms{
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+  padding:16px;
+}
